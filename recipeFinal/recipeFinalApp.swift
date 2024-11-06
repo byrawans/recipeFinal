@@ -1,17 +1,12 @@
-//
-//  recipeFinalApp.swift
-//  recipeFinal
-//
-//  Created by Rawan Alshareef on 04/05/1446 AH.
-//
-
 import SwiftUI
+import SwiftData
 
 @main
-struct recipeFinalApp: App {
+struct RecipeApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            main_page()
         }
+        .modelContainer(for: RecipeData.self)
     }
 }
